@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Whatsapp Direct</string>
+    <string name="number">Phone Number</string>
+    <string name="message">Lets</string>
+    <string name="button">Chat</string>
+    <string name="errortitle">Oh No</string>
+    <string name="errormessage">Number cannot be blank</string>
+</resources>
