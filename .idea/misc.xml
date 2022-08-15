@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/background1.xml" value="0.195" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/branding.xml" value="0.1975" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/direct_logo.xml" value="0.195" />
       </map>
     </option>
