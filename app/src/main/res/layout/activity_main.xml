@@ -7,57 +7,40 @@
     android:background="@color/material_dynamic_secondary95"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="365dp"
-        android:layout_height="751dp"
-        android:background="@color/material_dynamic_primary99"
-        android:visibility="visible"
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="399dp"
+        android:layout_height="428dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="281dp"
-        android:layout_height="61dp"
-        android:fontFamily="@font/fira_sans_medium"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.608" />
+        app:srcCompat="@drawable/tile" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phone"
-        android:layout_width="328dp"
-        android:layout_height="83dp"
+        android:layout_width="303dp"
+        android:layout_height="78dp"
         android:elevation="@dimen/cardview_default_elevation"
         android:translationZ="12dp"
         app:counterEnabled="true"
         app:counterMaxLength="10"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.202">
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.345">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/number" />
+            android:hint="@string/number"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/chatbutton"
         android:layout_width="158dp"
         android:layout_height="91dp"
         android:fontFamily="@font/fira_sans_medium"
@@ -66,39 +49,52 @@
         android:textColorLink="@color/material_dynamic_primary80"
         android:textSize="45sp"
         android:translationZ="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.643" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/dummytext"
         android:layout_width="135dp"
         android:layout_height="67dp"
+        android:layout_marginStart="52dp"
         android:fontFamily="@font/fira_sans_medium"
         android:text="@string/message"
         android:textAlignment="center"
         android:textSize="45sp"
         android:translationZ="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.795"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/phone"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.441" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="74dp"
-        android:layout_height="83dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@mipmap/wadirect_foreground" />
+        android:id="@+id/credit"
+        android:layout_width="377dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/madewithlove" />
+
+    <ImageView
+        android:id="@+id/titleimage"
+        android:layout_width="334dp"
+        android:layout_height="361dp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        app:srcCompat="@drawable/watitile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
